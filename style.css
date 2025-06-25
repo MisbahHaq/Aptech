@@ -44,6 +44,15 @@ header {
     margin: 50px 0 30px 0;
 }
 
+.second-page {
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8fDA%3D");
+}
+
 .row-1,
 .row-2 {
     display: flex;
@@ -102,7 +111,7 @@ header {
 }
 
 button.buy {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
     font-size: 15px;
