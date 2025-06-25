@@ -10,9 +10,9 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding-bottom: 50px;
 }
 
-/* Load custom font */
 @font-face {
     font-family: 'Gilroy';
     src: url('./Gilroy-Light.otf');
@@ -25,7 +25,6 @@ header {
     justify-content: center;
     align-items: center;
     background-image: url("https://media.burford.co.uk/images/SNY04089.jpg_edit.width-640_ln7jm6QxYVkHFHaT.jpg");
-    object-fit: cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,44 +33,41 @@ header {
     font-size: 75px;
     color: whitesmoke;
     letter-spacing: 8px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
 }
 
 .mid-line {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-/* button.buy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} */
-
 .box {
-    height: 100%;
-    background-color: rebeccapurple;
+    width: 200px;
+    background-color: blanchedalmond;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    flex-direction: column;
 }
 
 .box-body img {
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     width: 150px;
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-detail {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 button.buy {
@@ -80,8 +76,24 @@ button.buy {
     padding: 5px 15px;
     font-size: 15px;
     background-color: black;
-    color: white;
+    color: whitesmoke;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+button.buy:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
 }
