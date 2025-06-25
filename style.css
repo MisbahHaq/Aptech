@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./Gilroy-Light.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     font-family: 'Gilroy';
     display: flex;
@@ -11,13 +18,6 @@ body {
     align-items: center;
     gap: 20px;
     padding-bottom: 50px;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('./Gilroy-Light.otf');
-    font-style: normal;
-    font-weight: normal;
 }
 
 header {
@@ -41,10 +41,22 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0 30px 0;
 }
 
-.box {
+.row-1,
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+/* Reusable box styles */
+.box,
+.box-2 {
     width: 200px;
     background-color: blanchedalmond;
     justify-content: center;
@@ -56,12 +68,31 @@ header {
     flex-direction: column;
 }
 
-.box-body img {
+.box-2 {
+    background-color: thistle;
+}
+
+/* Reusable body container */
+.box-body,
+.box-body-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-body img,
+.box-body-2 img {
     width: 150px;
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.box-body img:hover,
+.box-body-2 img:hover {
+    transform: scale(1.05);
 }
 
 .product-detail {
@@ -88,12 +119,4 @@ button.buy:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
-}
-
-.row-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 0 20px;
 }
