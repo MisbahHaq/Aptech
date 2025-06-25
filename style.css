@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-top: 50px;
 }
 
 /* Load custom font */
@@ -27,15 +26,14 @@ header {
     align-items: center;
     background-image: url("https://media.burford.co.uk/images/SNY04089.jpg_edit.width-640_ln7jm6QxYVkHFHaT.jpg");
     object-fit: cover;
-    /* Ensures imge covers full area */
+    background-size: cover;
     background-position: center;
-    /* Centers the image */
     background-repeat: no-repeat;
-    /* Prevents tiling */
-    width: 100%;
-    height: 300px;
-    /* You can change this to whatever height you prefer */
-
+    width: 100vw;
+    height: 450px;
+    font-size: 75px;
+    color: whitesmoke;
+    letter-spacing: 8px;
 }
 
 .mid-line {
@@ -44,8 +42,7 @@ header {
     align-items: center;
 }
 
-/* Fixed selector: no space between 'button' and '.buy' */
-button.buy {
+/* button.buy {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,4 +53,14 @@ button.buy {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+} */
+
+.box {
+    background-color: rebeccapurple;
+}
+
+.box-body img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
