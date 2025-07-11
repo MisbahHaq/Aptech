@@ -2,164 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hasnain K Joray</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Totally Serious Portfolio</title>
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f0f0;
+      }
+      nav {
+        background-color: #222;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+      }
+      img {
+        width: 200px;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+      }
+      section {
+        margin: 30px 0;
+      }
+      button {
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+    </style>
   </head>
+  <body onload="showFunnyAlert()">
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#resume">Download Resume</a>
+    </nav>
 
-  <body>
-    <header>
-      <h1>Hasnain K Joray</h1>
-    </header>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <img
+          src="https://media.npr.org/assets/img/2023/01/14/this-is-fine_custom-b7c50c845a78f5d7716475a92016d52655ba3115.jpg?s=1100&c=50&f=jpeg"
+          alt="Definitely me"
+        />
+        <p>
+          Hello there! I'm a <strong>professional pizza taster</strong> turned
+          <strong>web developer</strong>. I make websites that sometimes work
+          and always look like they were made with love (and coffee).
+        </p>
+      </section>
 
-    <div class="second-page">
-      <div class="mid-line">
-        <h1>Summer Collection</h1>
-      </div>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>Cat Counter 3000:</strong> Counts cats. Very useful. 🐱
+          </li>
+          <li>
+            <strong>To-Do App:</strong> Where I list things and then ignore
+            them.
+          </li>
+          <li><strong>Weather App:</strong> Always says "probably cloudy".</li>
+        </ul>
+      </section>
 
-      <div class="row-1">
-        <div class="box">
-          <div class="box-body">
-            <img
-              src="https://static01.nyt.com/images/2024/01/01/multimedia/01AC-EXERCISECLOTHES-wfpk/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg"
-              alt="Brown Shirt"
-            />
-            <div class="product-detail">Brown Shirt</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-body">
-            <img
-              src="https://static01.nyt.com/images/2024/01/01/multimedia/01AC-EXERCISECLOTHES-wfpk/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg"
-              alt="Brown Shirt"
-            />
-            <div class="product-detail">Brown Shirt</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-body">
-            <img
-              src="https://static01.nyt.com/images/2024/01/01/multimedia/01AC-EXERCISECLOTHES-wfpk/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg"
-              alt="Brown Shirt"
-            />
-            <div class="product-detail">Brown Shirt</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-body">
-            <img
-              src="https://static01.nyt.com/images/2024/01/01/multimedia/01AC-EXERCISECLOTHES-wfpk/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg"
-              alt="Brown Shirt"
-            />
-            <div class="product-detail">Brown Shirt</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: notarealperson@example.com</p>
+        <p>Twitter: @CodeAndPizza</p>
+      </section>
 
-        <div class="box">
-          <div class="box-body">
-            <img
-              src="https://static01.nyt.com/images/2024/01/01/multimedia/01AC-EXERCISECLOTHES-wfpk/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg"
-              alt="Brown Shirt"
-            />
-            <div class="product-detail">Brown Shirt</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="box-body">
-            <img
-              src="https://static01.nyt.com/images/2024/01/01/multimedia/01AC-EXERCISECLOTHES-wfpk/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg"
-              alt="Brown Shirt"
-            />
-            <div class="product-detail">Brown Shirt</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="mid-line">
-        <h1>Hoodies</h1>
-      </div>
-
-      <div class="row-2">
-        <div class="box box-2">
-          <div class="box-body-2">
-            <img
-              src="https://www.cougar.com.pk/cdn/shop/files/LHW403-BLK_3.webp?v=1729330750&width=533"
-              alt="Hoodie"
-            />
-            <div class="product-detail">Black Hoodie</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box box-2">
-          <div class="box-body-2">
-            <img
-              src="https://www.cougar.com.pk/cdn/shop/files/LHW403-BLK_3.webp?v=1729330750&width=533"
-              alt="Hoodie"
-            />
-            <div class="product-detail">Black Hoodie</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box box-2">
-          <div class="box-body-2">
-            <img
-              src="https://www.cougar.com.pk/cdn/shop/files/LHW403-BLK_3.webp?v=1729330750&width=533"
-              alt="Hoodie"
-            />
-            <div class="product-detail">Black Hoodie</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box box-2">
-          <div class="box-body-2">
-            <img
-              src="https://www.cougar.com.pk/cdn/shop/files/LHW403-BLK_3.webp?v=1729330750&width=533"
-              alt="Hoodie"
-            />
-            <div class="product-detail">Black Hoodie</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box box-2">
-          <div class="box-body-2">
-            <img
-              src="https://www.cougar.com.pk/cdn/shop/files/LHW403-BLK_3.webp?v=1729330750&width=533"
-              alt="Hoodie"
-            />
-            <div class="product-detail">Black Hoodie</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-        <div class="box box-2">
-          <div class="box-body-2">
-            <img
-              src="https://www.cougar.com.pk/cdn/shop/files/LHW403-BLK_3.webp?v=1729330750&width=533"
-              alt="Hoodie"
-            />
-            <div class="product-detail">Black Hoodie</div>
-            <button class="buy">Buy</button>
-            <button class="buy">Add to Cart</button>
-          </div>
-        </div>
-      </div>
+      <section id="resume">
+        <h2>Download Resume</h2>
+        <p>
+          Click the button below to download my incredibly impressive resume!
+        </p>
+        <a href="your-resume.pdf" download>
+          <button
+            onclick="alert('Warning: May contain extreme levels of awesomeness!')"
+          >
+            Download CV
+          </button>
+        </a>
+      </section>
     </div>
+
+    <script>
+      function showFunnyAlert() {
+        alert(
+          "Welcome to my portfolio. Abandon all seriousness, ye who enter here!"
+        );
+      }
+    </script>
   </body>
 </html>
