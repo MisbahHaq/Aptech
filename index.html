@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <title>Totally Serious Portfolio</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Comic Sans MS", cursive, sans-serif;
         margin: 0;
@@ -13,29 +16,37 @@
       nav {
         background-color: #222;
         color: white;
-        padding: 10px;
+        padding: 15px;
         text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
       }
       nav a {
         color: white;
-        margin: 10px;
+        margin: 15px;
         text-decoration: none;
         font-weight: bold;
+        font-size: 18px;
+      }
+      nav a:hover {
+        text-decoration: underline;
       }
       .container {
         max-width: 800px;
         margin: auto;
-        padding: 20px;
+        padding: 40px 20px;
         background: white;
       }
-      img {
+      img.profile {
         width: 200px;
         border-radius: 50%;
         display: block;
-        margin: auto;
+        margin: 20px auto;
       }
       section {
-        margin: 30px 0;
+        margin: 80px 0;
+        min-height: 100vh;
       }
       button {
         padding: 10px 20px;
@@ -44,9 +55,23 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        font-size: 16px;
       }
       button:hover {
         background: #0056b3;
+      }
+      .meme {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 30px auto;
+      }
+      .quote {
+        background: #ffeaa7;
+        padding: 15px;
+        border-left: 5px solid #fdcb6e;
+        font-style: italic;
+        margin: 30px 0;
       }
     </style>
   </head>
@@ -54,6 +79,7 @@
     <nav>
       <a href="#about">About Me</a>
       <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
       <a href="#contact">Contact</a>
       <a href="#resume">Download Resume</a>
     </nav>
@@ -62,44 +88,81 @@
       <section id="about">
         <h2>About Me</h2>
         <img
+          class="profile"
           src="https://media.npr.org/assets/img/2023/01/14/this-is-fine_custom-b7c50c845a78f5d7716475a92016d52655ba3115.jpg?s=1100&c=50&f=jpeg"
           alt="Definitely me"
         />
         <p>
           Hello there! I'm a <strong>professional pizza taster</strong> turned
-          <strong>web developer</strong>. I make websites that sometimes work
-          and always look like they were made with love (and coffee).
+          <strong>web developer</strong>. I once built a website entirely in
+          Comic Sans — because I believe in *fearless design*. I write code that
+          sometimes works and always surprises me.
         </p>
+        <div class="quote">“If it compiles, ship it.” – Me, under pressure</div>
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2>My Glorious Projects</h2>
         <ul>
           <li>
             <strong>Cat Counter 3000:</strong> Counts cats. Very useful. 🐱
           </li>
           <li>
-            <strong>To-Do App:</strong> Where I list things and then ignore
-            them.
+            <strong>To-Do App:</strong> Lists things I forget to do anyway.
           </li>
-          <li><strong>Weather App:</strong> Always says "probably cloudy".</li>
+          <li>
+            <strong>Weather App:</strong> Always says "Definitely raining
+            somewhere."
+          </li>
+          <li>
+            <strong>404 Page Simulator:</strong> Simulates losing your way in
+            life and on the web.
+          </li>
         </ul>
+        <img
+          src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+          class="meme"
+          alt="Coding under pressure"
+        />
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>I have a rich inner life, which includes:</p>
+        <ul>
+          <li>Yelling at my code until it listens.</li>
+          <li>Debugging bugs I created an hour ago.</li>
+          <li>Googling error messages like a pro.</li>
+          <li>Collecting coffee mugs and emotional damage.</li>
+        </ul>
+        <div class="quote">
+          “Sleep is for the weak — and people who aren't debugging.”
+        </div>
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: notarealperson@example.com</p>
-        <p>Twitter: @CodeAndPizza</p>
+        <h2>Contact Me, Maybe?</h2>
+        <p>
+          Email:
+          <a href="mailto:notarealperson@example.com"
+            >notarealperson@example.com</a
+          >
+        </p>
+        <p>
+          Twitter: <a href="https://twitter.com/CodeAndPizza">@CodeAndPizza</a>
+        </p>
+        <p>Carrier Pigeon: Currently out of service.</p>
       </section>
 
       <section id="resume">
         <h2>Download Resume</h2>
         <p>
-          Click the button below to download my incredibly impressive resume!
+          Click the magical button below to download my highly exaggerated
+          resume:
         </p>
         <a href="your-resume.pdf" download>
           <button
-            onclick="alert('Warning: May contain extreme levels of awesomeness!')"
+            onclick="alert('Warning: This resume contains levels of experience that may be fictional.')"
           >
             Download CV
           </button>
@@ -110,7 +173,7 @@
     <script>
       function showFunnyAlert() {
         alert(
-          "Welcome to my portfolio. Abandon all seriousness, ye who enter here!"
+          "Welcome to my totally professional portfolio. Viewer discretion is advised."
         );
       }
     </script>
