@@ -55,9 +55,22 @@ section {
 
 #hobbies {
     min-height: auto;
-    /* Removes forced tall height */
     margin: 40px 0;
-    /* Optional: reduce vertical spacing */
+}
+
+#contact {
+    min-height: auto;
+    margin: 40px 0;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 600px;
+}
+
+#resume {
+    min-height: auto;
+    margin: 40px 0;
+    text-align: center;
 }
 
 button {
